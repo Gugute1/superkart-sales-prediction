@@ -19,13 +19,14 @@ superkart-sales-prediction/
 
 ## FastAPI Endpoints (`/v1`)
 
-| Method   | Endpoint                | Description |
-| :---     | :---                    | :--- |
-| `GET`    | `/`                     | Root liveness check and endpoint directory |
-| `GET`    | `/health`               | Model readiness check (`CatBoostRegressor` loaded status) |
-| `POST`   | `/v1/predict`           | Single-item JSON prediction |
-| `POST`   | `/v1/predict_json_list` | Batch JSON list prediction |
-| `POST`   | `/v1/predict_batch`     | Batch `.csv` file upload prediction |
+| Method | Endpoint                | Description                                               |
+| :----- | :---------------------- | :-------------------------------------------------------- |
+| `GET`  | `/`                     | Root liveness check and endpoint directory                |
+| `GET`  | `/health`               | Model readiness check (`CatBoostRegressor` loaded status) |
+| `POST` | `/v1/predict`           | Single-item JSON prediction                               |
+| `POST` | `/v1/predict_json_list` | Batch JSON list prediction                                |
+| `POST` | `/v1/predict_batch`     | Batch `.csv` file upload prediction                       |
+
 
 ## Local Docker Execution
 ```bash
