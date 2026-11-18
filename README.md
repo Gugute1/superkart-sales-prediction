@@ -1,4 +1,4 @@
-# 🛒 SuperKart Store Sales Prediction (End-to-End ML Deployment)
+# SuperKart Store Sales Prediction (End-to-End ML Deployment)
 
 End-to-end machine learning pipeline and containerized microservices architecture for forecasting product-level store sales across SuperKart outlets.
 
