@@ -27,7 +27,6 @@ superkart-sales-prediction/
 | `POST` | `/v1/predict_json_list` | Batch JSON list prediction                                |
 | `POST` | `/v1/predict_batch`     | Batch `.csv` file upload prediction                       |
 
-
 ## Local Docker Execution
 ```bash
 # 1. Build & run FastAPI backend
