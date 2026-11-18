@@ -14,6 +14,7 @@ RUN pip install --no-cache-dir --upgrade pip && \
 
 COPY app_ui.py .
 
-EXPOSE 8501     # For Hugging Face Spaces (Docker SDK), use port 7860
+# For Hugging Face Spaces (Docker SDK), use port 7860
+EXPOSE 8501     
 
 CMD ["streamlit", "run", "app_ui.py", "--server.port=8501", "--server.address=0.0.0.0"]
