@@ -20,7 +20,6 @@ superkart-sales-prediction/
 ## FastAPI Endpoints (`/v1`)
 
 | Method | Endpoint                | Description                                               |
-
 | :----- | :---------------------- | :-------------------------------------------------------- |
 | `GET`  | `/`                     | Root liveness check and endpoint directory                |
 | `GET`  | `/health`               | Model readiness check (`CatBoostRegressor` loaded status) |
