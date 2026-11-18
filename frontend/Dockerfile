@@ -1,0 +1,19 @@
+
+# Base image for Docker container
+FROM python:3.13-slim    
+
+# Environment variables for Docker container
+ENV PYTHONDONTWRITEBYTECODE=1
+ENV PYTHONUNBUFFERED=1
+
+WORKDIR /app
+
+COPY requirements.txt .
+RUN pip install --no-cache-dir --upgrade pip && \
+    pip install --no-cache-dir -r requirements.txt
+
+COPY app_ui.py .
+
+EXPOSE 8501     # For Hugging Face Spaces (Docker SDK), use port 7860
+
+CMD ["streamlit", "run", "app_ui.py", "--server.port=8501", "--server.address=0.0.0.0"]
